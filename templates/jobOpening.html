@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Job Openings</title>
 </head>
 <body>
-$END$
+
+<div class="row text-center mt-5">
+{% for job in jobs %}
+  <div class="col-sm-6 mb-3 mb-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title display-6 ">
+            {{ job['title'] }}
+        </h5>
+          <p class="card-text lead"><b>Location:</b>&nbsp {{ job['location'] }}</p>
+         <p class="card-text lead"><b>Job Type:</b>&nbsp {{ job['job_type'] }}</p>
+          <a href="#" class="btn btn-outline-primary w-25 btn-lg">Apply</a>
+      </div>
+    </div>
+
+  </div>
+    {% endfor %}
 </body>
 </html>
