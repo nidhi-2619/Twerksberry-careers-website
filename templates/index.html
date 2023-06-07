@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="/static/css/home.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="/static/media/favicon.ico" rel="icon" type="image/x-icon"/>
     <title>Twerksberry Careers</title>
 </head>
 <body>
 <div class="m-4">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-in">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
                 <img src="/static/media/logo.jpg" height="50" alt="Logo"><b>Twerksberry</b>
@@ -33,24 +34,24 @@
         </div>
     </nav>
 </div>
-<h1 class="display-1  text-center text-danger ">Twerksberry<span class="text-dark px-4">Career</span></h1>
-<img src="/static/media/Group of Asian business people and creative designer meeting in office.jfif" class="container-fluid mt-4 object-fit-cover">
-<div class="container-fluid text-center">
+<h1 class="display-1  text-center text-danger " data-aos="fade-up">Twerksberry<span class="text-dark px-4">Career</span></h1>
+<img src="/static/media/Group of Asian business people and creative designer meeting in office.jfif" class="container-fluid mt-4 object-fit-cover" data-aos="fade-up">
+<div class="container-fluid text-center" data-aos="fade-up">
 <h2 class="display-2 mt-5">About Twerksberry</h2>
 <p class="lead mt-5">Twerksberry is a leading food delivery company that operates in several cities, providing a reliable and efficient platform
     for customers to order their favorite meals from local restaurants.
 Twerksberry has established a strong presence in the food delivery market by leveraging technology and innovation. They have developed user-friendly mobile apps and a robust website that makes it convenient for customers to explore menus, customize orders, and track deliveries in real-time.</p>
 </div>
     <h2 class="display-2 text-center">We are hiring</h2>
-<div class="container-sm grid ">
+<div class="container-sm grid" data-aos="fade-up">
     {% include 'jobOpening.html' %}
 
 </div>
-<div class="d-grid gap-2 col-3 mx-auto mt-5">
+<div class="d-grid gap-2 col-3 mx-auto mt-5" data-aos="fade-up">
     <button class="py-2 btn btn-outline-danger btn-lg" data-bs-toggle="collapse"> Contact us</button>
 </div>
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container bg-dark-subtle">
+<div class="container bg-dark-subtle" data-aos="fade-up">
 
     <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
     <!-- Grid container -->
@@ -139,5 +140,13 @@ Twerksberry has established a strong presence in the food delivery market by lev
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 150,
+        delay: 200,
+        duration:500,
+    });
+  </script>
 </body>
 </html>
