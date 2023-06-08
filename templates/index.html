@@ -10,9 +10,9 @@
     <link href="/static/media/favicon.ico" rel="icon" type="image/x-icon"/>
     <title>Twerksberry Careers</title>
 </head>
-<body>
-<div class="m-4">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-in">
+<body >
+<div class="m-4 shadow-md" loading="lazy">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-up" loading="lazy">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
                 <img src="/static/media/logo.jpg" height="50" alt="Logo"><b>Twerksberry</b>
@@ -35,7 +35,7 @@
     </nav>
 </div>
 <h1 class="display-1  text-center text-danger " data-aos="fade-up">Twerksberry<span class="text-dark px-4">Career</span></h1>
-<img src="/static/media/Group of Asian business people and creative designer meeting in office.jfif" class="container-fluid mt-4 object-fit-cover" data-aos="fade-up">
+<img src="/static/media/Group of Asian business people and creative designer meeting in office.jfif" class="container-fluid mt-4 object-fit-cover" data-aos="fade-up" loading="lazy">
 <div class="container-fluid text-center" data-aos="fade-up">
 <h2 class="display-2 mt-5">About Twerksberry</h2>
 <p class="lead mt-5">Twerksberry is a leading food delivery company that operates in several cities, providing a reliable and efficient platform
@@ -43,7 +43,7 @@
 Twerksberry has established a strong presence in the food delivery market by leveraging technology and innovation. They have developed user-friendly mobile apps and a robust website that makes it convenient for customers to explore menus, customize orders, and track deliveries in real-time.</p>
 </div>
     <h2 class="display-2 text-center">We are hiring</h2>
-<div class="container-sm grid" data-aos="fade-up">
+<div class="container-sm grid" data-aos="fade-up" loading="lazy">
     {% include 'jobOpening.html' %}
 
 </div>
@@ -51,7 +51,7 @@ Twerksberry has established a strong presence in the food delivery market by lev
     <button class="py-2 btn btn-outline-danger btn-lg" data-bs-toggle="collapse"> Contact us</button>
 </div>
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container bg-dark-subtle" data-aos="fade-up">
+<div class="container bg-dark-subtle" data-aos="fade-up" loading="lazy">
 
     <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
     <!-- Grid container -->
@@ -143,8 +143,8 @@ Twerksberry has established a strong presence in the food delivery market by lev
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-        offset: 150,
-        delay: 200,
+        offset: 250,
+        delay:0,
         duration:500,
     });
   </script>
