@@ -11,7 +11,7 @@
     <title>Twerksberry Careers</title>
 </head>
 <body >
-<div class="m-4 shadow-md" loading="lazy">
+<div class="m-1 shadow-md" loading="lazy">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-up" loading="lazy">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
@@ -34,13 +34,42 @@
         </div>
     </nav>
 </div>
-<h1 class="display-1  text-center text-danger " data-aos="fade-up">Twerksberry<span class="text-dark px-4">Career</span></h1>
-<img src="/static/media/Group of Asian business people and creative designer meeting in office.jfif" class="container-fluid mt-4 object-fit-cover" data-aos="fade-up" loading="lazy">
+
+<!-- Carousel images-->
+<div class="card text-bg-dark mask">
+  <img src="/static/media/Team%20of%20work%20showing%20unity%20with%20thei.jfif" class="card-img w-75 h-75 mx-auto" alt="">
+  <div class="card-img-overlay">
+   <h1 class="display-1 text-danger shadow shadow-gray shadow-intensity-lg" data-aos="fade-left">Twerksberry</h1>
+      <h1 class="display-1 text-light shadow shadow-gray shadow-intensity-lg" data-aos="fade-right">Career</h1>
+  </div>
+</div>
+
 <div class="container-fluid text-center" data-aos="fade-up">
 <h2 class="display-2 mt-5">About Twerksberry</h2>
 <p class="lead mt-5">Twerksberry is a leading food delivery company that operates in several cities, providing a reliable and efficient platform
     for customers to order their favorite meals from local restaurants.
 Twerksberry has established a strong presence in the food delivery market by leveraging technology and innovation. They have developed user-friendly mobile apps and a robust website that makes it convenient for customers to explore menus, customize orders, and track deliveries in real-time.</p>
+</div>
+<div id="carouselExampleDark" class="carousel  carousel-dark slide justify-content-center my-5">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/media/startup-team-zerotoone-scaled.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/media/Team of work showing unity with thei.jfif" class="d-block w-50 h-50 mx-auto" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/media/Working With What We Have.jfif" class="d-block w-50 h-50 mx-auto" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
     <h2 class="display-2 text-center">We are hiring</h2>
 <div class="container-sm grid" data-aos="fade-up" loading="lazy">
@@ -143,9 +172,9 @@ Twerksberry has established a strong presence in the food delivery market by lev
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-        offset: 250,
+        offset: 200,
         delay:0,
-        duration:500,
+        duration:1000,
     });
   </script>
 </body>
