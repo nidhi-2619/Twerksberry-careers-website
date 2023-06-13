@@ -1,4 +1,3 @@
-{#{% load static %}#}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
 </head>
 <body >
 <div class="m-1 shadow-md" loading="lazy">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-up" loading="lazy">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-down" loading="lazy">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
                 <img src="/static/media/logo.jpg" height="50" alt="Logo"><b>Twerksberry</b>
@@ -35,16 +34,14 @@
     </nav>
 </div>
 
-<!-- Carousel images-->
-<div class="card text-bg-dark mask">
-  <img src="/static/media/Team%20of%20work%20showing%20unity%20with%20thei.jfif" class="card-img w-75 h-75 mx-auto" alt="">
-  <div class="card-img-overlay">
-   <h1 class="display-1 text-danger shadow shadow-gray shadow-intensity-lg" data-aos="fade-left">Twerksberry</h1>
-      <h1 class="display-1 text-light shadow shadow-gray shadow-intensity-lg" data-aos="fade-right">Career</h1>
-  </div>
+<div class="container-fluid text-center" data-aos="fade-down">
+    <h1 class="display-1 mt-5">Twerksberry</h1>
+    <h2 class="display-2 mt-5">"Taste the Opportunities: Build a Delicious Career with Us."</h2>
 </div>
 
-<div class="container-fluid text-center" data-aos="fade-up">
+<img src="/static/media/Team%20of%20work%20showing%20unity%20with%20thei.jfif" class="d-block w-50 h-50 mx-auto justify-content-center mx-5 my-5" alt="...">
+
+<div class="container-fluid text-center" data-aos="fade-down">
 <h2 class="display-2 mt-5">About Twerksberry</h2>
 <p class="lead mt-5">Twerksberry is a leading food delivery company that operates in several cities, providing a reliable and efficient platform
     for customers to order their favorite meals from local restaurants.
@@ -174,7 +171,7 @@ Twerksberry has established a strong presence in the food delivery market by lev
     AOS.init({
         offset: 200,
         delay:0,
-        duration:1000,
+        duration:600,
     });
   </script>
 </body>
