@@ -13,11 +13,11 @@
     <div class="card">
       <div class="card-body" >
         <h5 class="card-title display-6 ">
-            {{ job['title'] }}
+            {{ job['Title'] }}
         </h5>
-          <p class="card-text lead"><b>Location:</b>&nbsp {{ job['location'] }}</p>
-         <p class="card-text lead"><b>Job Type:</b>&nbsp {{ job['job_type'] }}</p>
-          <a href="#" class="btn btn-outline-primary w-25 btn-lg">Apply</a>
+          <p class="card-text lead"><b>Location:</b>&nbsp {{ job['Job_Location'] }}</p>
+         <p class="card-text lead"><b>Salary:</b>&nbsp <span>{{ job['Currency'] }}</span>{{ job['Salary'] }}</p>
+          <a href="/jobs/{{job['ID']}}" class="btn btn-outline-primary w-25 btn-lg">Apply</a>
       </div>
     </div>
 
