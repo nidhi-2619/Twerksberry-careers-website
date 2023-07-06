@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Job Openings</title>
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    {% include 'header.html' %}
 </head>
 <body>
 
@@ -17,20 +16,13 @@
         </h5>
           <p class="card-text lead"><b>Location:</b>&nbsp {{ job['Job_Location'] }}</p>
          <p class="card-text lead"><b>Salary:</b>&nbsp <span>{{ job['Currency'] }}</span>{{ job['Salary'] }}</p>
-          <a href="/jobs/{{job['ID']}}" class="btn btn-outline-primary w-25 btn-lg">Apply</a>
+          <a href="/jobs/{{job['ID']}}" class="btn btn-outline-primary w-25 btn-lg ">Apply</a>
       </div>
     </div>
 
   </div>
     {% endfor %}
 </div>
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        offset: 250,
-        delay:0,
-        duration:500,
-    });
-  </script>
+{% include 'footer.html' %}
 </body>
 </html>

@@ -1,45 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="/static/css/home.css" rel="stylesheet"/>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="/static/media/favicon.ico" rel="icon" type="image/x-icon"/>
-    <title>Twerksberry Careers</title>
+  <title>Twerksberry Careers</title>
+{% include 'header.html' %}
+
 </head>
-<body >
-<div class="m-1 shadow-md" loading="lazy">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-down" loading="lazy">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="/static/media/logo.jpg" height="50" alt="Logo"><b>Twerksberry</b>
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link">Who We are</a>
-                    <a href="#" class="nav-item nav-link">Benefits</a>
-                    <a href="#" class="nav-item nav-link">Career</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Teams</a>
-                </div>
-                <div class="navbar-nav ms-auto">
-                    <button href="#" class=" btn  btn-dark nav-item">Login/SignUp</button>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
+
+<body>
+{% include 'navbar.html' %}
 
 <div class="container-fluid text-center" data-aos="fade-down">
     <h1 class="display-1 mt-5">Twerksberry</h1>
     <h2 class="display-2 mt-5">"Taste the Opportunities: Build a Delicious Career with Us."</h2>
 </div>
 
-<img src="/static/media/Team%20of%20work%20showing%20unity%20with%20thei.jfif" class="d-block w-50 h-50 mx-auto justify-content-center mx-5 my-5" alt="...">
+<img src="/static/media/Team%20of%20work%20showing%20unity%20with%20thei.jfif" class="d-block w-80 h-80 mx-auto justify-content-center mx-5 my-5" alt="..." data-aos="fade-up">
 
 <div class="container-fluid text-center" data-aos="fade-down">
 <h2 class="display-2 mt-5">About Twerksberry</h2>
@@ -47,27 +22,19 @@
     for customers to order their favorite meals from local restaurants.
 Twerksberry has established a strong presence in the food delivery market by leveraging technology and innovation. They have developed user-friendly mobile apps and a robust website that makes it convenient for customers to explore menus, customize orders, and track deliveries in real-time.</p>
 </div>
-<div id="carouselExampleDark" class="carousel  carousel-dark slide justify-content-center my-5">
+
+<div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel" >
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/static/media/startup-team-zerotoone-scaled.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="/static/media/Working%20With%20What%20We%20Have.jfif" class="d-block w-50 h-50 mx-auto justify-content-center mx-5 my-5" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="/static/media/1683356719_federal.jfif" class="d-block w-50 h-50 mx-auto justify-content-center mx-5 my-5" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/static/media/Team of work showing unity with thei.jfif" class="d-block w-50 h-50 mx-auto" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="/static/media/Working With What We Have.jfif" class="d-block w-50 h-50 mx-auto" alt="...">
+      <img src="/static/media/startup-team-zerotoone-scaled.jpg" class="d-block w-50 h-50 mx-auto justify-content-center mx-5 my-5" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
     <h2 class="display-2 text-center">We are hiring</h2>
 <div class="container-sm grid" data-aos="fade-up" loading="lazy">
     {% include 'jobOpening.html' %}
@@ -76,103 +43,7 @@ Twerksberry has established a strong presence in the food delivery market by lev
 <div class="d-grid gap-2 col-3 mx-auto mt-5" data-aos="fade-up">
     <button class="py-2 btn btn-outline-danger btn-lg" data-bs-toggle="collapse"> Contact us</button>
 </div>
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container bg-dark-subtle" data-aos="fade-up" loading="lazy">
-
-    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4">OUR WORLD</h5>
-
-          <ul class="list-unstyled mb-4 ">
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">About us</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">Collections</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">Environmental philosophy</a>
-            </li>
-
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4">Assistance</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">Contact us</a>
-            </li>
-
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">FAQ</a>
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">Returns & Exchanges</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">Payment</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4">Careers</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-dark nav-link py-2">Jobs</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4">Sign up to our newsletter</h5>
-
-          <div class="form-outline form-white mb-4">
-            <input type="email" id="form5Example2" class="form-control" />
-            <label class="form-label" for="form5Example2 pt-2">Email address</label>
-          </div>
-
-          <button type="submit" class="btn btn-outline-white btn-block">Subscribe</button>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3 border-top border-white">
-      © 2023 Copyright
-      <a class="text-dark nav-link" href="https://twerksberry.com/">Twerksberry.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-
 </div>
-<!-- End of .container -->
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        offset: 200,
-        delay:0,
-        duration:600,
-    });
-  </script>
+{% include 'footer.html' %}
 </body>
 </html>

@@ -21,17 +21,16 @@ def jobDescription(id):
     else:
         res = dict(job)
         return render_template('jobPage.html', job=res)
-@app.route("/job/<id>/<title>", methods=['GET'])
+@app.route("/jobs/<id>/<title>", methods=['GET'])
 def jobDesc(id,title):
-    job = {'Job ID':id,'Job Title':title}
-    return render_template('application.html',job=job)
+    JOB = {'Job ID':id,'Job Title':title}
+    return render_template('application.html',job=JOB)
 
-@app.route("/job/<id>/applied", methods=['POST'])
+@app.route("/jobs/applied/<id>", methods=['POST'])
 def jobApply(id):
     data = request.form
-    res = add_application(id,data)
-    return render_template('applied.html',job=res)
-
+    add_application(id, data)
+    return render_template('applied.html')
 
 
 if __name__ == '__main__':

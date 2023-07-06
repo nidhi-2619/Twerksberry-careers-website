@@ -1,7 +1,7 @@
-Flask~=2.2.5
+Flask~=2.3.2
 gunicorn
 SQLAlchemy~=2.0.16
-pymysql
-dotenv
+pymysql~=1.0.3
+python_dotenv~=1.0.0
 
 
