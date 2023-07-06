@@ -30,9 +30,11 @@ def jobDetails(id):
 
 def add_application(Job_Id, applications):
     with engine.connect() as conn:
-        query = conn.execute(text("INSERT INTO applications(Job_Id, Full_Name, Email, Work_Experience, LinkedIn,Education,Resume_PDF) VALUES ((:Job_Id, :Full_Name, :Email, :Work_Experience,:LinkedIn,:Education,:Resume_PDF)")
+        query = conn.execute(text("INSERT INTO applications(Job_Id, Full_Name, Email, Work_Experience, LinkedIn,Education,Resume) VALUES (:Job_Id, :Full_Name, :Email, :Work_Experience,:LinkedIn,:Education,:Resume)")
         .bindparams(
             Job_Id=Job_Id, Full_Name=applications['Full_Name'], Email=applications['Email'],
             Work_Experience=applications['Work_Experience'], LinkedIn=applications['LinkedIn'],
-            Education=applications["Education"], Resume_PDF=applications['Resume_PDF'])
+            Education=applications['Education'], Resume=applications['Resume'])
         )
+
+
